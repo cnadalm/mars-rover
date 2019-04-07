@@ -58,7 +58,7 @@ public class DefaultEngine implements Engine {
         this.batteryCapacity.getAndAdd(100);
     }
 
-    @Scheduled(every = "1s")
+    @Scheduled(every = "3s")
     void consumeBattery() {
 
         if (batteryCapacity.get() > 0) {
